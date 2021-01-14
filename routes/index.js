@@ -12,23 +12,23 @@ router.get('/home', function(req, res, next) {
 });
 
 /* GET tickets page. */
-router.get('/tickets', function(req, res, next) {
-  res.render('index', { title: 'Tickets'});
+router.get('/About-me', function(req, res, next) {
+  res.render('About', { title: 'About Me'});
 });
 
 /* GET clients page. */
-router.get('/clients', function(req, res, next) {
-  res.render('index', { title: 'Clients'});
+router.get('/Projects', function(req, res, next) {
+  res.render('Projects', { title: 'Projects'});
 });
 
 /* GET services page. */
-router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services'});
+router.get('/skills', function(req, res, next) {
+  res.render('skills', { title: 'Skills'});
 });
 
 /* GET users page. */
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact Support'});
+  res.render('contact', { title: 'Contact'});
 });
 
 module.exports = router;

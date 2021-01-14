@@ -18,12 +18,12 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-//Allow Images to be viewed and displayed 
-//Error 1 Fix
+
+//Allowed Images to be viewed and displayed 
 app.use(express.static(path.join(__dirname,'public')));
 
-//Error 2 Fix
-//install bootstrap dependencies
+
+//installed bootstrap dependencies
 app.use(express.static(path.join(__dirname,'node_modules')));
 
 app.use('/users', usersRouter);
