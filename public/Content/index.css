@@ -1,0 +1,31 @@
+body {
+    background-color: #0B0C10;
+  }
+#intro{
+    color: #66FCF1;
+    text-align: center;
+    font-family: cursive;
+    animation: slide-in-left 3150ms ease-out;
+}
+#name{
+    color: azure;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: fade-in 3150ms ease-in;
+}
+#info{
+    color: azure;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: fade-in 3150ms ease-in;
+}
+
+@keyframes slide-in-left {
+    from { margin-right: -100%; }
+    to { margin-right: 0%; }
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
